@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+
+<form method="post" action="/weinxin-study/wx/menu" enctype="application/x-www-form-urlencoded">
+<input type="text" name="menu"/>
+<input type="submit" value="submit">
+</form>
+
+
+</body>
+<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+<script >
+window.onload=function(){
+	$.ajax({
+		url:"localhost:18080/weinxin-study/wx/menu",
+		tyle:"POST",
+		async: false,//异步
+		cache:false,
+		data:{
+			menu:{button:[{"url":"http://wangyifei.ngrok.cc/weinxin-study/wx/yybg","type":"view","name":"预约报港"}]}
+		},
+		dataType:"json",
+		success:function(data){
+			console.debug(data);
+		}
+		
+		
+	});
+}
+
+
+</script>
+
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.test.mapper.TPolicyQueryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zyiot.model.TPolicyQuery">
+        <id column="id" property="id"/>
+        <result column="pqType" property="pqType"/>
+        <result column="pqTitle" property="pqTitle"/>
+        <result column="pqContent" property="pqContent"/>
+        <result column="pqAddDate" property="pqAddDate"/>
+        <result column="pqLevel" property="pqLevel"/>
+        <result column="pqDataOperator" property="pqDataOperator"/>
+        <result column="version" property="version"/>
+        <result column="picUrl" property="picUrl"/>
+    </resultMap>
+
+</mapper>
