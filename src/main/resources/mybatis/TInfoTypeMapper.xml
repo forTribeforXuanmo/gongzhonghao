@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zyiot.gongzhonghao.mapper.TInfoTypeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zyiot.gongzhonghao.model.TInfoType">
+        <id column="id" property="id"/>
+        <result column="itName" property="itName"/>
+        <result column="itParentId" property="itParentId"/>
+        <result column="itAddDate" property="itAddDate"/>
+        <result column="itDataOperator" property="itDataOperator"/>
+        <result column="version" property="version"/>
+    </resultMap>
+
+</mapper>

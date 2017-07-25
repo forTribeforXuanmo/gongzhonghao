@@ -21,7 +21,7 @@
 </head>
 
 <body class="gray-bg">
-<div class="col-sm-10 col-sm-offset-1 text-center   animated fadeInDown">
+<div class="col-xs-10 col-xs-offset-1 text-center animated fadeInDown">
 
     <a>
         <c:if test="${stat}">

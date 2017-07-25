@@ -7,12 +7,12 @@
     <!-- 引入属性文件 -->
     <context:property-placeholder location="classpath:config.properties"/>
 
-    <context:component-scan base-package="com.zyiot.common"/>
+    <context:component-scan base-package="com.zyiot.gongzhonghao.common"/>
 
-    <context:component-scan base-package="com.zyiot.handler"/>
+    <context:component-scan base-package="com.zyiot.gongzhonghao.handler"/>
     <import resource="classpath:spring/spring-mybatis.xml"/>
     <!-- Service包(自动注入) -->
-    <context:component-scan base-package="com.zyiot.service"/>
-
+    <context:component-scan base-package="com.zyiot.gongzhonghao.service"/>
+    <import resource="classpath:spring/spring-cxf.xml"></import>
 
 </beans>

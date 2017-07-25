@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zyiot.gongzhonghao.mapper.TWeightReportHarborMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zyiot.gongzhonghao.model.TWeightReportHarbor">
+        <id column="id" property="id"/>
+        <result column="bId" property="bId"/>
+        <result column="cardId" property="cardId"/>
+        <result column="userName" property="userName"/>
+        <result column="IDCard" property="IDCard"/>
+        <result column="address" property="address"/>
+        <result column="phoneNumber" property="phoneNumber"/>
+        <result column="shipId" property="shipId"/>
+        <result column="wId" property="wId"/>
+        <result column="grainVariety" property="grainVariety"/>
+        <result column="grainProperty" property="grainProperty"/>
+        <result column="buyPrice" property="buyPrice"/>
+        <result column="checker" property="checker"/>
+        <result column="grossWeight" property="grossWeight"/>
+        <result column="tare" property="tare"/>
+        <result column="totalWeight" property="totalWeight"/>
+        <result column="otherReduce" property="otherReduce"/>
+        <result column="totalReduce" property="totalReduce"/>
+        <result column="trueWeight" property="trueWeight"/>
+        <result column="sumMoney" property="sumMoney"/>
+        <result column="payType" property="payType"/>
+        <result column="bankName" property="bankName"/>
+        <result column="bankId" property="bankId"/>
+        <result column="payAuthor" property="payAuthor"/>
+        <result column="payStatus" property="payStatus"/>
+        <result column="payDate" property="payDate"/>
+        <result column="payPlanId" property="payPlanId"/>
+        <result column="addDate" property="addDate"/>
+        <result column="weightEndDate" property="weightEndDate"/>
+        <result column="inOrOut" property="inOrOut"/>
+        <result column="positionNum" property="positionNum"/>
+        <result column="usedCar" property="usedCar"/>
+        <result column="addRecord" property="addRecord"/>
+        <result column="isAdd" property="isAdd"/>
+        <result column="version" property="version"/>
+        <result column="printCount" property="printCount"/>
+        <result column="weightAuthor" property="weightAuthor"/>
+        <result column="wxId" property="wxId"/>
+    </resultMap>
+
+</mapper>

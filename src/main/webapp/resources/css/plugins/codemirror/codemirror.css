@@ -457,7 +457,7 @@ div.CodeMirror-cursors {
     *vertical-align: text-bottom;
 }
 
-/* Used to force a border model for a node */
+/* Used to force Atest border model for Atest node */
 .cm-force-border {
     padding-right: .1px;
 }

@@ -3,7 +3,7 @@
 <mapper namespace="com.baomidou.test.mapper.TPolicyQueryMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.zyiot.model.TPolicyQuery">
+    <resultMap id="BaseResultMap" type="com.zyiot.gongzhonghao.model.TPolicyQuery">
         <id column="id" property="id"/>
         <result column="pqType" property="pqType"/>
         <result column="pqTitle" property="pqTitle"/>

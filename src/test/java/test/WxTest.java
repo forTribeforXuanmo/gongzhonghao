@@ -1,18 +1,18 @@
 package test;
 
-import com.zyiot.controller.WXToolsController;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.support.DependencyInjectionTestExecutionListener;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
+
+import java.io.*;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -62,9 +62,37 @@ public class WxTest {
         String a = "111";
         String b = "1";
         String c = "aaa";
-        String d = "a";
+        String d = "Atest";
         String matcher = "\\d{1}";
+        System.out.println(a.getBytes().toString());
+        String s = new String(a.getBytes());
+        System.out.println(s);
+
         System.out.println(a.matches(matcher) + " " + b.matches(matcher) + " " + c.matches(matcher) + " " + d.matches(matcher));
     }
 
+    @Test
+    public void testLength() {
+        System.out.println("o_YLgwO9W6lZx2epHy8HSzXxV2hA".length());
+    }
+
+    @Test
+    public void testObjOUt() {
+        File file = new File("c:/aa.data");
+        try {
+            FileOutputStream fos = new FileOutputStream(file);
+            User u = new User();
+            u.setA("123");
+            u.setB("456");
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
+            oos.writeObject(u);
+            oos.flush();
+            oos.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
 }

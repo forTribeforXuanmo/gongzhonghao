@@ -8,7 +8,7 @@
     <mvc:default-servlet-handler/>
 
     <!-- Controller包(自动注入) -->
-    <context:component-scan base-package="com.zyiot.controller"/>
+    <context:component-scan base-package="com.zyiot.gongzhonghao.controller"/>
     <!-- FastJson注入 -->
     <mvc:annotation-driven>
         <mvc:message-converters register-defaults="true">

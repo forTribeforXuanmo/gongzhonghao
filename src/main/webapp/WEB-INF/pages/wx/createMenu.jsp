@@ -15,18 +15,16 @@
 <script type="text/javascript" src="${pageContext.servletContext.contextPath}/resources/js/jquery-1.8.3.js"></script>
 <script >
 
-
-
 window.onload=function(){
-	var yybg_zzbg_url="http://www.jszyiot.com/gongzhonghao/wx/redirect/zzbg";
-	var yybg_grdj_url="http://www.jszyiot.com/gongzhonghao/wx/redirect/grdj";
-	var xxgg_qyxx_url="http://www.jszyiot.com/gongzhonghao/wx/redirect/qyxx";
-	var xxgg_sggg_url="http://www.jszyiot.com/gongzhonghao/wx/redirect/sggg";
-	var xxgg_pmgg_url="http://www.jszyiot.com/gongzhonghao/wx/redirect/pmgg";
-	
-	
-	yybg_zzbg_url =oauth2buildurl(yybg_zzbg_url);
-	yybg_grdj_url =oauth2buildurl(yybg_grdj_url);
+    var yybg_myinfo_url = "http://www.jszyiot.com/gongzhonghao/wx/myinfo";
+    var yybg_myHistoryBill_url = "http://www.jszyiot.com/gongzhonghao/wx/toMyHistoryBill";
+    var xxgg_qyxx_url = "http://www.jszyiot.com/gongzhonghao/wx/toXxgg/qyxx";
+    var xxgg_sggg_url = "http://www.jszyiot.com/gongzhonghao/wx/toXxgg/sggg";
+    var xxgg_pmgg_url = "http://www.jszyiot.com/gongzhonghao/wx/toXxgg/pmgg";
+
+
+    yybg_myinfo_url = oauth2buildurl(yybg_myinfo_url);
+    yybg_myHistoryBill_url = oauth2buildurl(yybg_myHistoryBill_url);
 	xxgg_qyxx_url =oauth2buildurl(xxgg_qyxx_url);
 	xxgg_sggg_url =oauth2buildurl(xxgg_sggg_url);
 	xxgg_pmgg_url =oauth2buildurl(xxgg_pmgg_url);
@@ -35,13 +33,13 @@ window.onload=function(){
 			        {
 			        name:"预约报港",
 					sub_button:[{
-                        name: "自助报港",
+                        name: "我的信息",
 						type:"view",
-						url:yybg_zzbg_url
+                        url: yybg_myinfo_url
 					},{
 						name:"个人单据",
 						type:"view",
-						url:yybg_grdj_url
+                        url: yybg_myHistoryBill_url
 					}]
 					},
 					{

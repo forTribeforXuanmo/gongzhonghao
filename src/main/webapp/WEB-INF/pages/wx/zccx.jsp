@@ -43,7 +43,7 @@
 </div>
 <%--<div class="weui-footer weui-footer_fixed-bottom">--%>
 <%--<p class="weui-footer__links">--%>
-<%--<a href="javascript:home();" class="weui-footer__link ">WeUI首页</a>--%>
+<%--<Atest href="javascript:home();" class="weui-footer__link ">WeUI首页</Atest>--%>
 <%--</p>--%>
 <%--<p class="weui-footer__text">Copyright &copy; 2008-2016 weui.io</p>--%>
 <%--</div>--%>

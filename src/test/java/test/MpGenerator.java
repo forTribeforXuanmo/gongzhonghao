@@ -69,10 +69,10 @@ public class MpGenerator {
         // strategy.setCapitalMode(true);// 全局大写命名 ORACLE 注意
         //strategy.setTablePrefix(new String[] { "tlog_", "tsys_" });// 此处可以修改为您的表前缀
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
-        // strategy.setInclude(new String[] { "user" }); // 需要生成的表
+        strategy.setInclude(new String[]{"t_info_type"}); // 需要生成的表
         // strategy.setExclude(new String[]{"test"}); // 排除生成的表
         // 自定义实体父类
-        // strategy.setSuperEntityClass("com.baomidou.springmvc.model.wx");
+        // strategy.setSuperEntityClass("com.zyiot.gongzhong.model");
         // 自定义实体，公共字段
         // strategy.setSuperEntityColumns(new String[] { "test_id", "age" });
         // 自定义 mapper 父类
@@ -95,6 +95,8 @@ public class MpGenerator {
         PackageConfig pc = new PackageConfig();
         pc.setParent("com.zyiot");
         pc.setModuleName("gongzhonghao");
+        pc.setController("controller");
+        pc.setEntity("model");
         mpg.setPackageInfo(pc);
 
         // 注入自定义配置，可以在 VM 中使用 cfg.abc 【可无】
@@ -131,8 +133,8 @@ public class MpGenerator {
 
         // 关闭默认 xml 生成，调整生成 至 根目录
         TemplateConfig tc = new TemplateConfig();
-        tc.setXml(null);
-        mpg.setTemplate(tc);
+        // tc.setXml(null);
+
 
         // 自定义模板配置，可以 copy 源码 mybatis-plus/src/main/resources/template 下面内容修改，
         // 放置自己项目的 src/main/resources/template 目录下, 默认名称一下可以不配置，也可以自定义模板名称
@@ -145,7 +147,7 @@ public class MpGenerator {
         // tc.setServiceImpl("...");
         // 如上任何一个模块如果设置 空 OR Null 将不生成该模块。
         // mpg.setTemplate(tc);
-
+        mpg.setTemplate(tc);
         // 执行生成
         mpg.execute();
 

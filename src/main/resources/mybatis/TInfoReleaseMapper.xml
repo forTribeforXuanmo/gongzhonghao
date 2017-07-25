@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zyiot.gongzhonghao.mapper.TInfoReleaseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zyiot.gongzhonghao.model.TInfoRelease">
+        <id column="id" property="id"/>
+        <result column="irType" property="irType"/>
+        <result column="irTitle" property="irTitle"/>
+        <result column="irContent" property="irContent"/>
+        <result column="irAddDate" property="irAddDate"/>
+        <result column="irLevel" property="irLevel"/>
+        <result column="irDataOperator" property="irDataOperator"/>
+        <result column="version" property="version"/>
+    </resultMap>
+
+</mapper>
