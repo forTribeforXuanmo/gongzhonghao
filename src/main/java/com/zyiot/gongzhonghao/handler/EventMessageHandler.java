@@ -62,6 +62,7 @@ public class EventMessageHandler implements WxMessageHandler {
             }
         } else if (WxConsts.EVT_SUBSCRIBE.equals(event)) {
             String time = DateFormatUtils.format(new Date(), "yyyy-MM-dd HH:mm:ss");
+            xmlOutMessage = WxXmlOutMessage.TEXT().content("欢迎订阅了该公众号！").toUser(wxMessage.getFromUserName()).fromUser(wxMessage.getToUserName()).build();
             logger.info("用户<" + wxMessage.getFromUserName() + ">:订阅了一波    时间:" + time);
         } else if (WxConsts.EVT_UNSUBSCRIBE.equals(event)) {
             String time = DateFormatUtils.format(new Date(), "yyyy-MM-dd HH:mm:ss");

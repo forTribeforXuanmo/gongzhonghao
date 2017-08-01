@@ -75,7 +75,7 @@ public class ControllerLogAspect {
             logger.error("异常：" + e);
         } finally {
             long endTime = System.currentTimeMillis();
-            logger.info("调用服务:" + declaringTypeName + "." + signatyreName + "总时间:" + Long.valueOf(endTime - startTime));
+            logger.info("调用服务:" + declaringTypeName + "." + signatyreName + "总时间:" + (endTime - startTime));
             logger.info("出参:  类型> " + JSON.toJSONString(returnType) + " 结果——》" + result);
             logger.info("--------------结束日志---------------");
             return result;

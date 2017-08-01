@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zyiot.gongzhonghao.mapper.TStoragInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zyiot.gongzhonghao.model.TStoragInfo">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="code" property="code"/>
+        <result column="quanZhong" property="quanZhong"/>
+        <result column="cangKu" property="cangKu"/>
+        <result column="storageID" property="storageID"/>
+        <result column="source" property="source"/>
+        <result column="buyYear" property="buyYear"/>
+    </resultMap>
+
+
+</mapper>

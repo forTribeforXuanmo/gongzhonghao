@@ -9,9 +9,7 @@ public class EventMatcher implements WxMessageMatcher {
     public boolean match(WxXmlMessage message) {
         String event = message.getEvent();
         return true;
-
         // TODO Auto-generated method stub
-
     }
 
 }

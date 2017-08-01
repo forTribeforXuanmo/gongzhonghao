@@ -62,8 +62,13 @@
                 <!-- 分页插件配置 -->
                 <bean id="paginationInterceptor" class="com.baomidou.mybatisplus.plugins.PaginationInterceptor">
                 </bean>
-
+                <bean id="aa" class="com.baomidou.mybatisplus.plugins.PerformanceInterceptor">
+                    <property name="maxTime" value="200"/>
+                    <!--SQL是否格式化 默认false-->
+                    <property name="format" value="true"/>
+                </bean>
             </array>
+
         </property>
 	    <!-- 全局配置注入 -->
 	    <property name="globalConfig" ref="globalConfig" />
